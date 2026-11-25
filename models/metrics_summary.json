@@ -1,0 +1,186 @@
+{
+    "rain_prediction": {
+        "model_name": "Rain Prediction Model",
+        "accuracy": 0.9874786568013659,
+        "precision_macro": 0.9634553463840547,
+        "recall_macro": 0.9436953335539691,
+        "f1_macro": 0.9533186802569924,
+        "f1_weighted": 0.9873422896295322,
+        "confusion_matrix": [
+            [
+                3238,
+                16
+            ],
+            [
+                28,
+                232
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.9914268218003675,
+                "recall": 0.9950829748002459,
+                "f1-score": 0.9932515337423313,
+                "support": 3254.0
+            },
+            "1": {
+                "precision": 0.9354838709677419,
+                "recall": 0.8923076923076924,
+                "f1-score": 0.9133858267716536,
+                "support": 260.0
+            },
+            "accuracy": 0.9874786568013659,
+            "macro avg": {
+                "precision": 0.9634553463840547,
+                "recall": 0.9436953335539691,
+                "f1-score": 0.9533186802569924,
+                "support": 3514.0
+            },
+            "weighted avg": {
+                "precision": 0.9872876165594787,
+                "recall": 0.9874786568013659,
+                "f1-score": 0.9873422896295322,
+                "support": 3514.0
+            }
+        },
+        "top_features": {
+            "dry_spell_hours": 0.17460105246042268,
+            "interaction_wtd_dryspell": 0.13838043887711146,
+            "rain_cum_1h": 0.11294039761779542,
+            "rainfall_intensity_mmh": 0.0997415159088161,
+            "interaction_wtd_trend_vpd": 0.045851626726581184,
+            "vpd_kpa": 0.0450288350645106,
+            "tmat_delta_1h": 0.03541368621767085,
+            "relative_humidity_pct": 0.033558804348860286,
+            "rain_cum_24h": 0.03298998739718659,
+            "wtd_drawdown_rate_24h": 0.024942284835337315
+        }
+    },
+    "fire_risk_prediction": {
+        "model_name": "Fire Risk Prediction Model",
+        "accuracy": 0.9903244166192373,
+        "precision_macro": 0.9934253448905472,
+        "recall_macro": 0.9771867219303885,
+        "f1_macro": 0.985043910885363,
+        "f1_weighted": 0.9902434893282968,
+        "confusion_matrix": [
+            [
+                2784,
+                1
+            ],
+            [
+                33,
+                696
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.9882854100106496,
+                "recall": 0.999640933572711,
+                "f1-score": 0.993930739021778,
+                "support": 2785.0
+            },
+            "1": {
+                "precision": 0.9985652797704447,
+                "recall": 0.9547325102880658,
+                "f1-score": 0.9761570827489481,
+                "support": 729.0
+            },
+            "accuracy": 0.9903244166192373,
+            "macro avg": {
+                "precision": 0.9934253448905472,
+                "recall": 0.9771867219303885,
+                "f1-score": 0.985043910885363,
+                "support": 3514.0
+            },
+            "weighted avg": {
+                "precision": 0.9904180295481826,
+                "recall": 0.9903244166192373,
+                "f1-score": 0.9902434893282968,
+                "support": 3514.0
+            }
+        },
+        "top_features": {
+            "interaction_vpd_solar": 0.17704607286784713,
+            "vpd_kpa": 0.14760654908128631,
+            "solar_radiation_wm2": 0.13882330482905403,
+            "temp_rolling_mean_1h": 0.0746444740718443,
+            "relative_humidity_pct": 0.07116082310993455,
+            "air_temperature_c": 0.058058376979031115,
+            "dew_point_depression_c": 0.05758580287320767,
+            "interaction_wtd_trend_vpd": 0.04167886654615004,
+            "apparent_temp_c": 0.03614841305906572,
+            "humidity_rolling_mean_1h": 0.03599850082251118
+        }
+    },
+    "drought_risk_prediction": {
+        "model_name": "Drought Risk Prediction Model",
+        "accuracy": 0.9755264655663062,
+        "precision_macro": 0.9770237711769635,
+        "recall_macro": 0.9786867720879187,
+        "f1_macro": 0.97759371545897,
+        "f1_weighted": 0.9755443747130403,
+        "confusion_matrix": [
+            [
+                920,
+                0,
+                0
+            ],
+            [
+                4,
+                1189,
+                14
+            ],
+            [
+                0,
+                68,
+                1319
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.9956709956709957,
+                "recall": 1.0,
+                "f1-score": 0.9978308026030369,
+                "support": 920.0
+            },
+            "1": {
+                "precision": 0.9459029435163087,
+                "recall": 0.9850869925434963,
+                "f1-score": 0.9650974025974026,
+                "support": 1207.0
+            },
+            "2": {
+                "precision": 0.9894973743435859,
+                "recall": 0.9509733237202596,
+                "f1-score": 0.9698529411764706,
+                "support": 1387.0
+            },
+            "accuracy": 0.9755264655663062,
+            "macro avg": {
+                "precision": 0.9770237711769635,
+                "recall": 0.9786867720879187,
+                "f1-score": 0.97759371545897,
+                "support": 3514.0
+            },
+            "weighted avg": {
+                "precision": 0.9761397345065607,
+                "recall": 0.9755264655663062,
+                "f1-score": 0.9755443747130403,
+                "support": 3514.0
+            }
+        },
+        "top_features": {
+            "rain_cum_24h": 0.09175248624836356,
+            "wtd_lag_1h": 0.07623421220808499,
+            "water_table_depth_cm": 0.07518154098532095,
+            "wtd_lag_6h": 0.07303655176582459,
+            "wtd_site_anomaly": 0.06830531268916816,
+            "tmat_rolling_mean_24h": 0.06127153376758777,
+            "consecutive_low_wtd_hours": 0.057089670399956056,
+            "wtd_drawdown_rate_24h": 0.052634970329892575,
+            "interaction_wtd_vpd": 0.0491209493462196,
+            "wtd_lag_24h": 0.04250312349141537
+        }
+    }
+}
